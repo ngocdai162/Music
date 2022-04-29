@@ -2,37 +2,182 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p {
+  margin : 0px;
+  color :  #333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2 {
+  color: #333;
+  font-weight: 500;
+  font-size:20px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.navBar {
+  height : 140px;
+  background-color: #666666;
+  display :flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.navBar h1{
+  color :  #fff;
+  margin:  0px;
 }
 
-@keyframes App-logo-spin {
-  from {
+.container {
+ 
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffaaaa;
+  max-height : calc(100vh - 220px);
+  width: 100%;
+  padding : 40px;
+  position:fixed;
+  bottom: 0px;
+}
+
+.detail {
+  width: calc(30% - 40px);
+  /* height: */
+  background-color:#fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.detail_img {
+  width: 200px;
+  height:  200px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.detail_img img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.rotate360 {
+  animation:   rotate360 infinite 20s linear;
+}
+
+
+.detail h2 {
+  color: #333;
+}
+
+.detail_processSong {
+ display: flex;
+ justify-content:center;
+ align-items: center;
+ width: 100%;
+ margin-top: 10px;
+ margin-bottom : 20px;
+ 
+}
+
+.detail_processSong input{
+  width: 70%;
+  cursor: pointer;
+  margin-left:  20px;
+ }
+
+ .detail_processSong i{
+  font-size: 20px;
+  color: #666666;
+ }
+
+ .detail_processSong i:hover{
+  color: #a5a5a5;
+  cursor: pointer;
+ }
+
+ .detail_processSong p{
+  font-size: 20px;
+  color: #666666;
+ }
+
+
+.detail audio {
+  width: 0px;
+  height :  0px;
+}
+
+
+.control_audio {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.control_audio i{
+  font-size: 30px;
+  color: #666666;
+}
+.control_audio i:hover{
+  color: #a5a5a5;
+  cursor: pointer;
+}
+
+
+
+.listSongs {
+  width: calc(70% - 80px);
+  /* height: 500px; */
+  background-color: #fff;
+  margin-right: 80px;
+  border-radius: 10px;
+  padding-bottom: 20px;
+}
+
+.listSongs h2 {
+  margin: 0px;
+  line-height: 100px;
+}
+
+.listSongs ul {
+  list-style: none;
+  color: #fff;
+  font-size: 30px;
+  padding : 0px;
+  margin: 0px;
+  overflow: scroll;
+  height:  calc(100% - 100px);
+  overflow-x: hidden;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+}
+
+.listSongs ul li{
+ height: 60px;
+ text-align: center;
+ line-height: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.listSongs ul li p {
+  font-size: 18px;;
+ }
+
+.listSongs ul li:hover{
+  background-color: #ffeaea;
+  cursor: pointer;
+ }
+
+ .noneBlock {
+   display: none;
+ }
+ @keyframes rotate360 {
+   to{
     transform: rotate(0deg);
-  }
-  to {
+   } from {
     transform: rotate(360deg);
-  }
-}
+   }
+ }
