@@ -4,7 +4,8 @@ import Detail from './components/Detail';
 import ListSongs from './components/ListSongs';
 import dataSongs from "./data/song.json";
 import {Songs} from "./Context";
-import './App.css'
+import './App.css';
+import "./responsive.css";
 function App() {
   const [song, setSong] = useState(dataSongs[0])
   const handleSetSong = (idSong) => {
